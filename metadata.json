@@ -1,0 +1,8 @@
+{
+  "name": "Study Assistant Pro",
+  "description": "A comprehensive study productivity suite including To-dos, Technical Notes with advanced visualizations, Pomodoro Timer, and Learning Statistics.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

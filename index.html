@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Assistant Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+        overflow: hidden;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      
+      /* Refined Markdown Rendering Styles - Smaller headers as requested */
+      .markdown-content h1 { font-size: 1.75rem !important; font-weight: 900 !important; margin-top: 1.25rem !important; margin-bottom: 0.75rem !important; color: #0f172a !important; display: block !important; border-bottom: 2px solid #f1f5f9; padding-bottom: 0.4rem; }
+      .markdown-content h2 { font-size: 1.45rem !important; font-weight: 800 !important; margin-top: 1.25rem !important; margin-bottom: 0.6rem !important; color: #1e293b !important; display: block !important; }
+      .markdown-content h3 { font-size: 1.2rem !important; font-weight: 700 !important; margin-top: 1rem !important; margin-bottom: 0.5rem !important; color: #334155 !important; display: block !important; }
+      .markdown-content p { margin-bottom: 0.85rem; line-height: 1.6; color: #334155; }
+      .markdown-content strong { font-weight: 800 !important; color: #000 !important; }
+      .markdown-content ul { list-style-type: disc !important; margin-left: 1.25rem !important; margin-bottom: 0.85rem !important; }
+      .markdown-content ol { list-style-type: decimal !important; margin-left: 1.25rem !important; margin-bottom: 0.85rem !important; }
+      .markdown-content blockquote { border-left: 4px solid #3b82f6; padding-left: 0.85rem; font-style: italic; color: #64748b; margin: 1rem 0; background: #f8fafc; padding: 0.4rem 0.85rem; }
+      
+      .markdown-content code:not(pre code) { background-color: #f1f5f9; padding: 0.15rem 0.35rem; border-radius: 0.25rem; font-family: 'Fira Code', monospace; font-size: 0.85em; color: #e11d48; }
+      .markdown-content pre { 
+        background-color: #1e1e2e !important; 
+        color: #f8fafc; 
+        padding: 1.25rem !important; 
+        border-radius: 1rem !important; 
+        overflow-x: auto; 
+        margin: 1.25rem 0; 
+        border: 1px solid #334155;
+      }
+      .markdown-content pre code { 
+        background-color: transparent !important; 
+        padding: 0 !important; 
+        color: inherit; 
+        font-family: 'Fira Code', monospace;
+        text-shadow: none !important;
+      }
+      
+      .markdown-content img { max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1rem 0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+      .markdown-content hr { margin: 1.5rem 0; border: 0; border-top: 1px solid #f1f5f9; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "marked": "https://esm.sh/marked@^15.0.0",
+    "prismjs": "https://esm.sh/prismjs@1.29.0"
+  }
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
